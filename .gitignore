@@ -1,31 +1,91 @@
-# --- IDE / Editor ---
-.vs/
-.vscode/
-.idea/
-.rider/
-*.code-workspace
+# ================================
+# .NET / C# baseline
+# ================================
+# User/IDE state
+*.user
+*.suo
+*.userprefs
+*.sln.ide
 *.DotSettings.user
 
+# ReSharper
+_ReSharper.*
+
+# NuGet (keep .nuget config, ignore local packages cache)
+.nuget/packages/
+packages/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+[Ll]og/
+[Ll]ogs/
+
+# Build outputs (scoped)
+**/[Bb]in/
+**/[Oo]bj/
+artifacts/
+out/
+TestResults/
+
+# .NET Core lock files (legacy)
+project.lock.json
+project.fragment.lock.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NuGet Packages
+*.nupkg
+# NuGet Symbol Packages
+*.snupkg
+
+# Code coverage & test artifacts
+CodeCoverage/
+*.coverage
+*.coveragexml
+*.opencover.xml
+*.trx
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Temp files
+~$*
+*~
+
+# ================================
+# IDEs / Editors
+# ================================
+# Visual Studio
+.vs/
+
+# VS caches & layout (don’t commit)
 **/DesignTimeBuild/
 **/.dbcache*/
 **/FileContentIndex/
 **/v*/DocumentLayout*.json
 
-# --- Build / tooling extras ---
-artifacts/
-out/
-TestResults/
-*.coverage
-*.coveragexml
-*.opencover.xml
+# VS Code / JetBrains
+.vscode/
+.idea/
+.rider/
+*.code-workspace
 
-
+# ================================
+# Local config & secrets
+# (keep non-secret appsettings in Git)
+# ================================
 appsettings.*.local.json
 secrets.json
-local.settings.json           # Azure Functions
+local.settings.json         # Azure Functions
 *.local.json
-.env                          # dotenv files with secrets
-
-# --- OS junk ---
-.DS_Store
-Thumbs.db
+.env
