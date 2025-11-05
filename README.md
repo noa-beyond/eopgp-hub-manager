@@ -115,5 +115,5 @@ dotnet ef database update --startup-project ../HubManager
 AGPL-3.0 (see `LICENSE`).
 
 ```
-# Save this file as README.md at the repository root.
+# Save this file as README.md at the repository root when you fork this project
 ```
