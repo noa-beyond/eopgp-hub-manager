@@ -1,3 +1,0 @@
-2025-11-04 13:59:19.111 +02:00 [INF] Starting NoaHubManager
-2025-11-04 13:59:19.468 +02:00 [INF] Initializing Kafka services startup sequence
-2025-11-04 13:59:19.473 +02:00 [INF] All Kafka services started successfully. Total services: 3
